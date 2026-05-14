@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>老郭聊地产 - EB-5尽调课程免费领取</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_GA_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YOUR_GA_ID');
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: linear-gradient(180deg, #f8f8f8 0%, #ffffff 60%, #f8f8f8 100%);
+      padding: 60px 24px;
+    }
+
+    .hero-photo-bg {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1109px;
+      height: 782px;
+      opacity: 0.12;
+      object-fit: cover;
+      object-position: center top;
+      z-index: 0;
+      will-change: transform;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      text-align: center;
+    }
+
+    .channel-badge {
+      display: inline-block;
+      background: #d4380d;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 20px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+      letter-spacing: 2px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      color: #1a1a1a;
+      line-height: 1.2;
+    }
+
+    .hero h1.title-line1 {
+      margin-bottom: 0;
+    }
+
+    .hero .title-line2 {
+      font-size: 52px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      color: #1a1a1a;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 span.highlight,
+    .hero .title-line2 span.highlight {
+      color: #d4380d;
+    }
+
+    .hero-desc {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 36px;
+      line-height: 1.9;
+    }
+
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-num {
+      font-size: 34px;
+      font-weight: 700;
+      color: #d4380d;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 13px;
+      color: #888;
+      margin-top: 5px;
+      letter-spacing: 1px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #d4380d 0%, #ff6b3d 100%);
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 20px 50px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 10px 40px rgba(212, 56, 13, 0.35);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 50px rgba(212, 56, 13, 0.45);
+    }
+
+    .qr-images {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .qr-images img {
+      width: 180px;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .qr-label {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #666;
+      font-weight: 500;
+    }
+
+    .qr-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section {
+      padding: 100px 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .curriculum-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .curriculum-item {
+      display: flex;
+      align-items: flex-start;
+      padding: 28px;
+      background: #fafafa;
+      border-radius: 20px;
+      border-left: 5px solid #d4380d;
+    }
+
+    .curriculum-num {
+      width: 40px;
+      height: 40px;
+      background: #d4380d;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-right: 18px;
+    }
+
+    .curriculum-text h3 {
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .curriculum-text p {
+      font-size: 15px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .section-intro {
+      text-align: center;
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+
+    .service-section {
+      background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
+      padding: 80px 24px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .service-item {
+      display: flex;
+      align-items: flex-start;
+      padding: 28px;
+      background: #fff;
+      border-radius: 20px;
+      border: 2px solid #d4380d;
+      box-shadow: 0 4px 20px rgba(212, 56, 13, 0.1);
+    }
+
+    .service-num {
+      width: 40px;
+      height: 40px;
+      background: #d4380d;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-right: 18px;
+    }
+
+    .service-text h3 {
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #1a1a1a;
+    }
+
+    .service-text p {
+      font-size: 15px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .bottom-cta {
+      text-align: center;
+      padding: 80px 24px;
+      background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
+    }
+
+    .footer-note {
+      text-align: center;
+      padding: 50px 24px;
+      font-size: 14px;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      .hero-photo-bg {
+        opacity: 0.08;
+        width: 100%;
+        height: 100%;
+      }
+
+      .hero h1,
+      .hero .title-line2 {
+        font-size: 26px;
+      }
+
+      .hero-desc {
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      .stats-row {
+        gap: 28px;
+      }
+
+      .stat-num {
+        font-size: 28px;
+      }
+
+      .curriculum-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .qr-images {
+        gap: 30px;
+      }
+
+      .qr-images img {
+        width: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <img src="Guo-photo.jpg" alt="" class="hero-photo-bg">
+
+    <div class="hero-inner">
+      <div class="channel-badge">老郭聊地产</div>
+      <h1 class="title-line1">如何评估EB-5项目的</h1>
+      <p class="title-line2"><span class="highlight">拿卡和回款概率</span>？</p>
+      <p class="hero-desc">
+        比律师更懂房地产，比房地产人更懂基金结构<br>
+        精通美国私募基金、房地产投资、和EB-5法规
+      </p>
+
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-num">22年</div>
+          <div class="stat-label">地产经验</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">200+</div>
+          <div class="stat-label">新政尽调项目</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1500+</div>
+          <div class="stat-label">咨询用户</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">20万+</div>
+          <div class="stat-label">订阅粉丝</div>
+        </div>
+      </div>
+
+      <button class="cta-btn" style="cursor: default; pointer-events: none;">扫码添加老郭，领取EB-5尽调清单</button>
+
+      <div class="qr-images">
+        <div class="qr-item">
+          <img src="老郭微信.png" alt="老郭微信" onclick="gtag('event', 'qr_scan', {'event_category': 'engagement', 'event_label': 'wechat_qr_top'});">
+          <div class="qr-label">老郭微信</div>
+        </div>
+        <div class="qr-item">
+          <img src="老郭WhatsApp.png" alt="老郭WhatsApp" onclick="gtag('event', 'qr_scan', {'event_category': 'engagement', 'event_label': 'whatsapp_qr_top'});">
+          <div class="qr-label">老郭WhatsApp</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">EB-5尽调重点解析</h2>
+    <p class="section-intro">这 6 个问题，是投资人做 EB-5 项目尽调的核心框架。我们的重点是回到项目合同文件、资金结构、就业逻辑、还款路径和项目盈利本身，帮助投资人识别真实风险。</p>
+
+    <div class="curriculum-grid">
+      <div class="curriculum-item">
+        <div class="curriculum-num">1</div>
+        <div class="curriculum-text">
+          <h3>资金结构</h3>
+          <p>各方资金占比和进入顺序是什么？项目资金是否足够支撑竣工、就业创造和拿到绿卡？</p>
+        </div>
+      </div>
+
+      <div class="curriculum-item">
+        <div class="curriculum-num">2</div>
+        <div class="curriculum-text">
+          <h3>抵押担保</h3>
+          <p>NCE 有可能收回80万美元本金的比例和周期？JCE 提供的抵押或担保是否真正有执行价值？</p>
+        </div>
+      </div>
+
+      <div class="curriculum-item">
+        <div class="curriculum-num">3</div>
+        <div class="curriculum-text">
+          <h3>回款周期</h3>
+          <p>贷款期限、延期条款和再投资安排如何？管理人再投资倾向性如何？投资人最可能在什么时候拿回本金？</p>
+        </div>
+      </div>
+
+      <div class="curriculum-item">
+        <div class="curriculum-num">4</div>
+        <div class="curriculum-text">
+          <h3>I-526E 拒签退款条款</h3>
+          <p>如果I-526E被拒，是否无条件退款？还是存在前置条件、等待期或拖延型"文字游戏"？</p>
+        </div>
+      </div>
+
+      <div class="curriculum-item">
+        <div class="curriculum-num">5</div>
+        <div class="curriculum-text">
+          <h3>项目盈利能力</h3>
+          <p>项目本身是否赚钱？贷款到期时，项目是否有真实能力偿还EB-5 资金？</p>
+        </div>
+      </div>
+
+      <div class="curriculum-item">
+        <div class="curriculum-num">6</div>
+        <div class="curriculum-text">
+          <h3>管理人权限与免责</h3>
+          <p>管理人是否拥有过大的自由裁量权？是否存在"权力很大、责任极小"的高风险条款？</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-section">
+    <h2 class="section-title">老郭EB-5全程服务</h2>
+    <div class="service-grid">
+      <div class="service-item">
+        <div class="service-num">1</div>
+        <div class="service-text">
+          <h3>不限量的项目尽调</h3>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-num">2</div>
+        <div class="service-text">
+          <h3>不限量全程陪同筛选项目</h3>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-num">3</div>
+        <div class="service-text">
+          <h3>不限量协助与意向项目方（NCE 或 JCE）谈判（补充协议，签约沟通等）</h3>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-num">4</div>
+        <div class="service-text">
+          <h3>协助资金文案的梳理</h3>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-num">5</div>
+        <div class="service-text">
+          <h3>专业律所推荐和沟通</h3>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-num">6</div>
+        <div class="service-text">
+          <h3>最终筛选出风险最小的项目</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bottom-cta">
+    <button class="cta-btn" style="cursor: default; pointer-events: none;">【扫码添加老郭，开始咨询吧！】</button>
+    <div class="qr-images">
+      <div class="qr-item">
+        <img src="老郭微信.png" alt="老郭微信" onclick="gtag('event', 'qr_scan', {'event_category': 'engagement', 'event_label': 'wechat_qr_bottom'});">
+        <div class="qr-label">老郭微信</div>
+      </div>
+      <div class="qr-item">
+        <img src="老郭WhatsApp.png" alt="老郭WhatsApp" onclick="gtag('event', 'qr_scan', {'event_category': 'engagement', 'event_label': 'whatsapp_qr_bottom'});">
+        <div class="qr-label">老郭WhatsApp</div>
+      </div>
+    </div>
+  </section>
+
+  <p class="footer-note">美国地产投资 & EB-5项目尽调专业频道</p>
+</body>
+<script>
+  const bg = document.querySelector('.hero-photo-bg');
+  window.addEventListener('scroll', () => {
+    bg.style.transform = `translateX(-50%) translateY(${window.scrollY * 0.3}px)`;
+  });
+</script>
+</html>
